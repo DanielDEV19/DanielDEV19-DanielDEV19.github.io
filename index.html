@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Daniel Islado</title>
+
+    <!-- favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png"> -->
+
+    <!-- Theme Mode JS-->
+    <script src="./assets/js/themeMode.js"></script>
+
+    <!-- Page Loading CSS -->
+    <link rel="stylesheet" href="./assets/css/pageLoading.css">
+
+    <!-- Page Loading JS -->
+    <script src="./assets/js/pageLoading.js"></script>
+
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- icofont -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/icofont.min.css">
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="./assets/css/theme.min.css">
+</head>
+
+<body class="bg-secondary">
+
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div><span>Cargando...</span>
+        </div>
+    </div>
+
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+
+        <!-- Header -->
+        <header class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand pe-sm-3" href="./index.html">
+                    JS
+                </a>
+
+                <!-- Button Theme Mode -->
+                <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+                    <input class="form-check-input" type="checkbox" id="theme-mode">
+                    <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
+                    <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+                </div>
+
+                <!-- Button Contacto Desktop -->
+                <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex"
+                    href="mailto:josingaq@uch.pe">
+                    <i class="ai-mail fs-xl me-2 ms-n1"></i>
+                    Contáctame
+                </a>
+
+                <!-- Button Menu -->
+                <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Bar -->
+                <nav class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies">Hobbies</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Formación</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Proyectos</a>
+                        </li>
+                    </ul>
+
+                    <!-- Button Contacto Mobile -->
+                    <div class="d-sm-none p-3 mt-n3">
+                        <a class="btn btn-primary w-100  mb-1" href="mailto:josingaq@uch.pe">
+                            <i class="ai-mail fs-xl me-2 ms-n1"></i>
+                            Contáctame
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Presentación -->
+        <section class="overflow-hidden pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+                <div class="row align-items-center py-4 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
+                    <div
+                        class="col-lg-8 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
+                        <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
+                            <div class="parallax-layer" data-depth="0.1"
+                                style="border-radius: 1rem 5rem; overflow: hidden;">
+                                <img src="./assets/img/pixelcut-export.jpeg" alt="Layer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-1">
+                        <h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3 mb-3 mb-lg-5">
+                            Hola! Soy Daniel Islado.
+                        </h1>
+                        <p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-3 mb-lg-5">
+                            Soy un estudiante de la carrera de Ingeniería de software con Inteligencia Artificial
+                            en el instituto SENATI, actualmente participo en el proyecto
+                            Oracle ONE en Alura Latam.
+                        </p>
+
+                        <div class="d-flex justify-content-around justify-content-lg-start mb-3 gap-1 gap-lg-3">
+                            <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                                href="https://github.com/DanielDEV19">
+                                <i class="ai-github"></i>
+                            </a>
+                            <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                                href="https://www.linkedin.com/in/daniel-gerardo-islado-huarand-735029273/">
+                                <i class="ai-linkedin"></i>
+                            </a>
+                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                <a class="btn btn-primary btn-lg px-3 py-2" target="_blank"
+                                        href="#"> <!-- AQUI VA LA RUTA DEL CV -->
+                                    Descargar CV &nbsp;&nbsp; <i class="ai-cloud-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mi -->
+        <section class="bg-secondary pt-5 pb-5 mt-5 mb-5" id="sobre-mi">
+            <div class="container pt-5 pb-5 mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start">
+                        <h2 class="h1">Sobre mí</h2>
+                        <p class="pb-3 pb-sm-4">Conóceme</p>
+                    </div>
+                    <div class="col-md-8 col-lg-7 offset-lg-1">
+                        <div class="accordion" id="faq">
+                            <div class="accordion-item bg-light">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#questionOne" aria-expanded="true"
+                                        aria-controls="questionOne">¿Quién soy?</button>
+                                </h3>
+                                <div class="accordion-collapse collapse show" id="questionOne"
+                                    aria-labelledby="headingOne" data-bs-parent="#faq">
+                                    <div class="accordion-body fs-sm">
+                                        Soy un estudiante técnico en Ingeniería de Software con especialización 
+                                        en Inteligencia Artificial del instituto SENATI, con conocimientos en desarrollo web.
+                                        Me gusta aprender cosas nuevas y me considero una persona muy curiosa.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#questionTwo" aria-expanded="false"
+                                        aria-controls="questionTwo">Soy una persona autodidacta</button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faq">
+                                    <div class="accordion-body fs-sm">
+                                        Me gusta investigar y aprender cosas nuevas, por lo que siempre estoy
+                                        buscando nuevas formas de mejorar mis habilidades y aprender nuevas
+                                        tecnologías.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container pt-5 pb-5 mt-5 mb-5" id="skills">
+            <h2 class="text-center pt-5 mt-5">Skills</h2>
+            <p class="text-center">Mis conocimientos</p>
+            <div class="bg-light rounded-5 p-3">
+                <h4 class="text-center pt-2 pb-2 mt-2 mb-2">Frontend</h4>
+                <div class="row row-cols-2 row-cols-md-4 g-0">
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/html-1.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">HTML 5</h3>
+                            <span>Avanzado</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/css-3.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">CSS 3</h3>
+                            <span>Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/logo-javascript.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">JavaScript</h3>
+                            <span>Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/git-icon.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">Git</h3>
+                            <span>Basico</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/tailwind-css-2.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">Tailwind CSS</h3>
+                            <span>Básico</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/react-2.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">React JS</h3>
+                            <span>Básico</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-center pt-2 pb-2 mt-2 mb-2">Backend</h4>
+                <div class="row row-cols-2 row-cols-md-4 g-0">
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob pt-1" src="./assets/img/php-1.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2 mt-4">PHP</h3>
+                            <span>Basico</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/python.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">Python</h3>
+                            <span>Básico</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/java.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">Java</h3>
+                            <span>Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/nodejs-icon.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">Node JS</h3>
+                            <span>Proximamente</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h4 class="text-center pt-2 pb-2 mt-2 mb-2">DataBase</h4>
+                <div class="row row-cols-2 row-cols-md-4 g-0">
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/sql-server.png"
+                                style="max-width: 60px; width: 100%;">
+                            <h3 class="h5 mb-2">MS SQL Server</h3>
+                            <span>Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-flex justify-content-center text-center text-md-center position-relative">
+                        <div class="p-3 px-sm-0">
+                            <img class="d-inline-block mb-3 mb-lg-4 skills__blob" src="./assets/img/mysql-6.svg"
+                                style="max-width: 50px; width: 100%;">
+                            <h3 class="h5 mb-2">MySQL</h3>
+                            <span>Basico</span>
+                        </div>
+                    </div>
+                </div>+
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="container pt-5 pb-5 mt-5 mb-5 bg-light rounded-5" id="hobbies">
+            <h2 class="text-center pt-5 pb-5 mt-5 mb-5">Hobbies</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <!-- Item-->
+                <div class="col">
+                    <div class="card card-flip">
+                        <div class="card-flip-inner">
+                            <div class="d-flex align-items-center card-flip-front bg-secondary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-book mb-3 text-primary" style="font-size: 5rem;"></i>
+                                    <h3>Conocer nuevas tecnologías</h3>
+                                </div>
+                            </div>
+                            <div class="card-flip-back bg-primary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-read-book mb-5 text-white" style="font-size: 5rem;"></i>
+                                    <p class="card-text text-white opacity-70 mt-5">
+                                        Me gusta explorar las últimas innovaciones tecnológicas y entender cómo están cambiando el mundo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col">
+                    <div class="card card-flip">
+                        <div class="card-flip-inner">
+                            <div class="d-flex align-items-center card-flip-front bg-secondary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="ai-monitor mb-3 text-primary" style="font-size: 5rem;"></i>
+                                    <h3>Jugar videojuegos</h3>
+                                </div>
+                            </div>
+                            <div class="card-flip-back bg-primary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-game-pad mb-5 text-white" style="font-size: 5rem;"></i>
+                                    <p class="card-text text-white opacity-70 mt-5">
+                                        Disfruto de los desafíos y la diversión que ofrecen los videojuegos, ya sea en solitario o con amigos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col">
+                    <div class="card card-flip">
+                        <div class="card-flip-inner">
+                            <div class="d-flex align-items-center card-flip-front bg-secondary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-terminal icofont-5x text-primary"></i>
+                                    <h3 class="mt-3">Programación web</h3>
+                                </div>
+                            </div>
+                            <div class="card-flip-back bg-primary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-code-alt icofont-5x text-white"></i>
+                                    <p class="card-text text-white opacity-70 mt-5">
+                                        Me gusta programar, cada día aprendo nuevas cosas en el mundo de la
+                                        programación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col">
+                    <div class="card card-flip">
+                        <div class="card-flip-inner">
+                            <div class="d-flex align-items-center card-flip-front bg-secondary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-flash icofont-5x text-primary"></i>
+                                    <h3 class="mt-3">Aprender sobre electrónica</h3>
+                                </div>
+                            </div>
+                            <div class="card-flip-back bg-primary rounded-5">
+                                <div class="card-body text-center">
+                                    <i class="icofont-tools-bag icofont-5x text-white"></i>
+                                    <p class="card-text text-white opacity-70 mt-5">
+                                        Me interesa entender cómo funcionan los circuitos y los dispositivos electrónicos, y explorar proyectos prácticos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio-->
+        <section class="container pt-5 pb-5 mt-5 mb-5" id="portafolio">
+            <h2 class="text-center pt-5 mt-5">Portafolio</h2>
+            <p class="text-center pb-5 mb-5">Proyectos</p>
+            <hr class="pb-5 mb-5">
+            <!-- Item-->
+            <div class="row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4">
+                <div class="col-md-7 col-lg-6 mb-4 mb-md-0">
+                    <a class="d-block position-relative rounded-5 overflow-hidden" target="_blank"
+                        href="https://github.com/DanielDEV19/Proyecto-Encriptador-de-Texto">
+                        <img class="d-block position-relative zindex-2 mx-auto"
+                            src="./assets/img/encriptador-java-script.png" width="700" data-aos="fade-in"
+                            data-aos-duration="400" data-aos-offset="250">
+                    </a>
+                </div>
+                <div class="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400"
+                    data-aos-offset="170">
+                    <div class="ps-md-3 ps-lg-0 text-center mb-5">
+                        <h2 class="h4">Encriptador de texto con JS</h2>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                            href="https://github.com/DanielDEV19/Proyecto-Encriptador-de-Texto">
+                            GitHub &nbsp;&nbsp; <i class="ai-github"></i>
+                        </a>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                            href="#">
+                            Live Demo &nbsp;&nbsp; <i class="ai-dashboard"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="pb-5 mb-5">
+
+            <!-- Item-->
+            <div class="row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4">
+                <div class="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400"
+                    data-aos-offset="170">
+                    <div class="ps-md-3 ps-lg-0 text-center mb-5">
+                        <h2 class="h4">Lorem Ipsum</h2>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                            href="#">
+                            GitHub &nbsp;&nbsp; <i class="ai-github"></i>
+                        </a>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                            href="#">
+                            Live Demo &nbsp;&nbsp; <i class="ai-dashboard"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-6 mb-4 mb-md-0">
+                    <a class="d-block position-relative rounded-5 overflow-hidden" target="_blank"
+                        href="#">
+                        <img class="d-block position-relative zindex-2 mx-auto"
+                            src="./assets/img/Proximamente.png" width="700" data-aos="fade-in"
+                            data-aos-duration="400" data-aos-offset="250">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="pb-5 mb-5">
+
+            <!-- Item-->
+            <div class="row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4">
+                <div class="col-md-7 col-lg-6 mb-4 mb-md-0">
+                    <a class="d-block position-relative rounded-5 overflow-hidden" target="_blank"
+                        href="#">
+                        <img class="d-block position-relative zindex-2 mx-auto" src="./assets/img/Proximamente.png"
+                            width="700" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250">
+                    </a>
+                </div>
+                <div class="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400"
+                    data-aos-offset="170">
+                    <div class="ps-md-3 ps-lg-0 text-center mb-5">
+                        <h2 class="h4">lorem Ipsum</h2>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank"
+                            href="#">
+                            GitHub &nbsp;&nbsp; <i class="ai-github"></i>
+                        </a>
+                        <a class="btn btn-dark btn-lg px-3 py-2" target="_blank" href="#">
+                            Live Demo &nbsp;&nbsp; <i class="ai-dashboard"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- <hr class="pb-5 mb-5"> -->
+        </section>
+
+        <!-- Contacto -->
+        <section class="container dark-mode pt-1 mt-1 pb-4 mb-4" style="margin-top: -380px;">
+            <div class="card border-0 bg-primary position-relative py-lg-4 py-xl-5">
+                <div class="card-body position-relative zindex-2 py-5">
+                    <form class="mx-auto" style="max-width: 800px;">
+                        <h2 class="h1 card-title text-center pb-4">Contacto</h2>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <label class="form-label fs-base" for="name">Nombre</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Nombre" id="name" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label fs-base" for="lastname">Apellido</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Apellido" id="lastname" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label fs-base" for="email">Email</label>
+                                <input class="form-control form-control-lg" type="email" placeholder="Email" id="email" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label fs-base" for="phone">Telefono</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Número de telefono" id="phone" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <label class="form-label fs-base" for="message">Mensaje</label>
+                                <textarea class="form-control form-control-lg" rows="6"
+                                    placeholder="Ingresa tu mensaje aqui..." id="message" required></textarea>
+                            </div>
+                            <div class="col-sm-12 text-center pt-4">
+                                <button class="btn btn-lg btn-light" type="submit">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer bg-secondary py-5">
+        <div class="container pt-md-2 pt-lg-3 pt-xl-4">
+            <div class="row pb-4 pb-md-5 pt-sm-2 mb-lg-2">
+
+                <div class="col-md-4 col-lg-4 pb-2 pb-md-0 mb-4 mb-md-0">
+                    <a class="navbar-brand text-nav py-0 mb-3 mb-md-4" href="./index.html">
+                        <span>Daniel Gerardo Islado Huarand</span>
+                    </a>
+                    <div class="d-flex">
+                        <a class="btn btn-icon btn-md btn-secondary rounded-circle me-3" href="#">
+                            <i class="ai-linkedin"></i>
+                        </a>
+                        <a class="btn btn-icon btn-md btn-secondary rounded-circle me-3" href="#">
+                            <i class="ai-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-lg-8 col-xl-8">
+                    <div class="row">
+                        <div
+                            class="col mb-3 mb-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-center">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link fw-normal py-1 px-0" href="./index.html">Inicio</a></li>
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#sobre-mi">Sobre mí</a></li>
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#skills">Skills</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col mb-4 mb-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-center">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#hobbies">Hobbies</a></li>
+                                <!-- <li><a class="nav-link fw-normal py-1 px-0" href="#">Formación</a></li> -->
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#portafolio">Proyectos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="fs-sm mb-0">
+                <span class="opacity-70">&copy; Todos los derechos reservados. Made by </span>
+                <a class="nav-link d-inline fw-normal p-0" href="https://www.joseleonel.tk/" target="_blank"
+                    rel="noopener">
+                    Daniel Gerardo Islado Huarand
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top button-->
+    <a class="btn-scroll-top" href="#top" data-scroll="">
+        <svg viewbox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10">
+            </circle>
+        </svg>
+        <i class="ai-arrow-up"></i>
+    </a>
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main theme script-->
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+
+</body>
+
+</html>

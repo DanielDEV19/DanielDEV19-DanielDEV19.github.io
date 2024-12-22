@@ -1,2 +1,2 @@
-# DanielDEV19-DanielDEV19.github.io
-Mi primer portafolio personal
+# Portafolio JS | daniel Islado
+Portafolio ONE - Alura Latam
